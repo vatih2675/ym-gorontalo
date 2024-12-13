@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BPJPH</title>
-  <link rel="shortcut icon" href="../../assets/Logo BPJPH.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/Logo BPJPH.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,90 +15,292 @@
   </style>
 </head>
 <body id="beranda" class="cursor-default">
-    <nav class="w-full px-10 py-2 shadow-md bg-white sticky top-0 flex justify-between items-center">
+    <nav class="w-full px-2 sm:px-10 py-2 shadow-md bg-white sticky top-0 flex justify-between items-center">
         <div onclick="window.location.href = '#beranda'" class="flex justify-center items-center gap-2">
-            <img src="../../assets/Logo BPJPH.png" alt="BPJPH" class="h-12">
-            <div class="flex flex-col justify-center items-start">
+            <img src="../assets/Logo BPJPH.png" alt="BPJPH" class="h-6 sm:h-12">
+            <span class="font-black hidden text-xl text-purple-800">BPJPH</span>
+            <div class="sm:flex flex-col justify-center items-start hidden">
                 <h2 class="text-xs">BADAN PENYELENGGARA</h2>
                 <h2 class="text-xs font-bold">JAMINAN PRODUK HALAL</h2>
                 <h2 class="text-xs">KEMENTRIAN AGAMA RI</h2>
             </div>
         </div>
-        <div class="flex justify-center items-center gap-5">
-            <h1 class="text-purple-900 font-bold text-2xl uppercase" id="judulBpjph"></h1>
-            <img src="../../assets/Logo Halal Indonesia.png" alt="Halal Indonesia" class="h-12">
+        <div class="flex justify-center items-center gap-3 sm:gap-5">
+            <h1 class="text-purple-900 font-bold text-end text-xs sm:text-2xl uppercase" id="judulBpjph"></h1>
+            <img src="../assets/Logo Halal Indonesia.png" alt="Halal Indonesia" class="hidden sm:block h-6 sm:h-12">
             <i class="bi-x-lg text-gray-300 hover:text-red-500 cursor-pointer duration-300 hidden" onclick="window.close()"></i>
         </div>
     </nav>
-    <section class="w-full h-full px-10 text-white bg-gradient-to-r from-purple-900 to-purple-600 flex justify-center items-center gap-10 shadow-md">
+    <section class="w-full h-full ps-4 sm:ps-10 text-white bg-gradient-to-r from-purple-900 to-purple-600 flex justify-center items-center gap-10 shadow-md">
         <div class="w-full flex justify-center items-center">
             <div class="w-full flex flex-col justify-center items-start">
-                <h1 class="font-bold text-purple-400 text-5xl">Pendampingan dan Pendamping</h1>
-                <h1 class="font-bold text-purple-400 text-5xl">Proses Produk Halal (PPH)</h1>
+                <h1 class="font-bold text-purple-400 text-xl sm:text-7xl">PRODUK & BAHAN</h1>
             </div>
-            <div class="w-5/12 pt-14">
-                <img src="../../assets/freepik__upload__67226.png" class="w-full" alt="P3H">
-            </div>
-        </div>
-    </section>
-    <section class="w-full h-full p-10 shadow-md">
-        <h1 class="text-center font-bold text-4xl mb-10 text-purple-700">ISU PENTING JPH DALAM UU CIPTAKER 11/2020 DAN PP 39/2021</h1>
-        <div class="w-8/12 mx-auto border border-2 border-purple-700 flex justify-center items-center gap-5 p-2 mb-10">
-            <div class="text-end">Kewajiban bersertifikat halal bagi UMK (yang memenuhi syarat tertentu) didasarkan atas pernyataan pelaku UMK (self declare). BPJPH menetapkan standarnya.</div>
-            <div class="text-start">Pendampingan PPH dilakukan oleh Ormas / Lembaga Keagamaan Islam, PT, dan K / L / Lembaga.</div>
-        </div>
-        <div class="w-8/12 mx-auto">
-            <div class="rounded-r-full rounded-l-full px-3 py-1 bg-purple-500 w-fit text-purple-100 font-black mx-auto mb-5">Pernyataan Pelaku Usaha</div>
-            <div class="flex justify-center items-start gap-5">
-                <div class="w-1/2 flex flex-col justify-start items-end gap-3">
-                    <div class="flex flex-col justify-start items-end">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Pendirian dan Akreditasi LPH</div>
-                        <p class="text-sm text-end px-2 text-purple-800">Pendirian LPH dikeluarkanoleh BPJPH. Langsung keluar status akreditas, dilaksanakan oleh Tim Akreditas yang ditunjuk Menteri Agama.</p>
-                    </div>
-                    <div class="flex flex-col justify-start items-end">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Wewenang MUI</div>
-                        <p class="text-sm text-end px-2 text-purple-800">Kerjasama BPJPH dengan MUI dalam fatwa penetapan kehalalan produk. Pelaksanaan fatwa halal MUI dilaksanakan di Provinsi maupun Kabupaten / Kota.</p>
-                    </div>
-                    <div class="flex flex-col justify-start items-end">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Auditor Halal</div>
-                        <p class="text-sm text-end px-2 text-purple-800">Pengangkatan auditor halal oleh LPHdengan syarat memliki sertifikat pelatihan dan / atau sertifikat kompetensi yang dilaksanakan BPJPH, PT, dan lembaga pelatikan terakreditasi.</p>
-                    </div>
-                </div>
-                <div class="w-1/2 flex flex-col justify-start items-start gap-3">
-                    <div class="flex flex-col">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Peran Serta Masyarakat</div>
-                        <p class="text-sm px-2 text-purple-800">UU Cipta Kerja memberikan peran serta masyarakat yang luas dalam penyelenggaraan JPH</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Waktu Pengurusan Sertifikat Halal</div>
-                        <p class="text-sm px-2 text-purple-800">21 hari sejak pengajuan permohonan ke BPJPH, audit di LPH, penetapan halal di Komisi Fatwa MUI sampai terbit sertifikat halal dari BPJPH.</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="rounded-md px-3 py-1 bg-purple-300 w-fit text-purple-700 font-bold">Gratis (0 Rupiah)</div>
-                        <p class="text-sm px-2 text-purple-800">Pengurusan sertifikasi halal bagi pelaku UMK tidak dikenakan biaya. Disubsidi oleh negara (melalui APBN / APBD) atau fasilitasi pihak lain.</p>
-                    </div>
-                </div>
+            <div class="w-6/12">
+                <img src="../assets/Produk Halal.jpg" class="w-full" alt="Produk Halal">
             </div>
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
-        <h1 class="text-purple-400 font-bold text-2xl text-center mb-3">ISU PENTING PERUBAHAN KEBIJAKAN JPH PADA PERPU 2/2022 TENTANG CIPTA KERJA</h1>
-        <div class="w-10/12 mx-auto">
-            <ol class="list-decimal ms-5 text-purple-200">
-                <li class="ps-1">Dalam hal batas waktu penetapan kehalalan produk oleh MUI, MUI Provinsi, MUI Kabupaten / Kota, atau Majelis Permusyawaratan Ulama Aceh selama 3 hari terlampaui, <span class="font-bold underline">maka penetapan kehalalan produk dilakukan oleh Komite Fatwa Produk Halal</span> dengan batas waktu paling lama 2 hari (Pasal 33).</li>
-                <li class="ps-1">Dalam hal permohonan sertifikasi halal dilakukan oleh UMK melalui pernyataan halal, <span class="font-bold underline">penetapan kehalalan produk dilakukan oleh Komite Fatwa Produk Halal</span> dengan batas waktu paling lama 1 hari (Pasal 33A).</li>
-                <li class="ps-1"><span class="font-bold underline">Pendampingan PPH diselesaikan paling lama 10 hari</span> sejak pengajuan sertifikat oleh UMK (Pasal 33A).</li>
-                <li class="ps-1"><span class="font-bold underline">Komite fatwa produk halal dibentuk dan bertanggung jawab kepada Menteri Agama</span> dan terdiri unsur ulama dan akademisi (Pasal 33B).</li>
-                <li class="ps-1"><span class="font-bold underline">Pemerintah menjalankan tugas Komite Fatwa Produk Halal</span> sampai dengan terbentuknya Komite Fatwa Produk Halal (Pasal 63C).</li>
-                <li class="ps-1"><span class="font-bold underline">Sertifikat halal terus berlaku sepanjang tidak terdapat perubahan komposisi bahan</span> (Pasal 42).</li>
-                <li class="ps-1"><span class="font-bold underline">Layanan penyelenggaraan JPH wajib menggunakan sistem elektronik terintegrasi</span> yang menghubungkan layanan pada BPJPH, LPH, MUI, MUI Provinsi, MUI Kabupaten / Kota, MPU Aceh, Komite Fatwa Produk Halal, dan Pendamping PPH (Pasal 52A).</li>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">KERANGKA PRINSIP DASAR</h1>
+        <div class="w-full sm:w-8/12 text-xs sm:text-base mx-auto">
+            <img src="../assets/kerangkaprinsipdasar.png" alt="Kerangka Prinsip Dasar">
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-lg sm:text-5xl text-center mb-3">KRITERIA SJPH</h1>
+        <div class="w-full sm:w-4/12 mx-auto text-purple-200 text-base sm:text-xl">
+            <p class="text-center mb-2">Lima kerangka prinsip dasar (arkan al-halal)</p>
+            <ol class="list-decimal ms-10">
+                <li class="ps-1">Komitmen dan tanggung jawab</li>
+                <li class="ps-1">Bahan</li>
+                <li class="ps-1">Proses Produk Halal</li>
+                <li class="ps-1">Produk</li>
+                <li class="ps-1">Pemantauan dan Evaluasi</li>
             </ol>
         </div>
     </section>
-    <section class="w-full h-full py-10 px-5 flex justify-center items-center gap-5 shadow-md footerBpjph"></section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">KRITERIA PRODUK</h1>
+        <div class="w-full text-xs sm:text-base mx-auto flex flex-col sm:flex-row justify-center items-start gap-4">
+            <div class="w-full sm:w-6/12">
+                <div class="rounded-xl shadow-md overflow-hidden bg-purple-200 text-purple-600">
+                    <h1 class="p-2 sm:p-4 text-center font-bold shadow-md">1. Nama Produk</h1>
+                    <div class="p-2 sm:p-4">
+                        <ol class="list-disc ms-5">
+                            <li>Tidak menggunakan nama minuman beralkohol. <span class="italic">Contoh : rootbeer, es rasa rhum</span></li>
+                            <li>Tidak menggunakan nama babi dan anjing serta turunannya. <span class="italic">Contoh : beef bacon dan hot dog</span></li>
+                            <li>Tidak bertentangan dengan akidah Islam.</li>
+                            <li>Tidak mengarah pada hal yang menimbulkan kekufuran/kemaksiatan.</li>
+                            <li>Tidak menggunakan kata yang berkonotasi erotis, vulgar, porno <span class="italic">Contoh : keripik janda genit</span></li>
+                        </ol>
+                        <small class="text-sm mt-4 block italic text-justify">Kecuali nama produk yang telah dikenal luas dan tidak mengandung bahan haram dapat digunakan (bir pletok, bakso, bakmi, bakpia, bakpao)</small>
+                    </div>
+                </div>
+            </div>    
+            <div class="w-full sm:w-6/12 flex flex-col justify-center items-center gap-4">
+                <div class="rounded-xl shadow-md overflow-hidden bg-purple-200 text-purple-600">
+                    <h1 class="p-2 sm:p-4 text-center font-bold shadow-md">2. Bentuk Produk</h1>
+                    <div class="p-2 sm:p-4">
+                        <ol class="list-disc ms-5">
+                            <li>Tidak menggunakan bentuk babi atau anjing.</li>
+                            <li>Tidak menggunakan bentuk produk, kemasan atau label yang menggambarkan sifat erotis, vulgar, porno.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="rounded-xl shadow-md overflow-hidden bg-purple-200 text-purple-600">
+                    <h1 class="p-2 sm:p-4 text-center font-bold shadow-md">3. Pengemasan Produk</h1>
+                    <div class="p-2 sm:p-4">
+                        <ol class="list-disc ms-5">
+                            <li>Wajib menggunakan bahan pengemas yang tidak terbuat atau mengandung bahan yang tidak halal.</li>
+                            <li>Harus mendesain kemasan, tanda, simbol, logo, nama, dan gambar yang tidak menyesatkan dan/atau melanggar syariat Islam.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-xl sm:text-4xl text-center">JENIS PRODUK <span class="italic">SELF DECLARE</span></h1>
+        <p class="text-center text-purple-300 mb-3 italic text-xs sm:text-base">Berdasarkan Keputusan Kepala BPJPH Nomor 150 Tahun 2022</p>
+        <div class="w-full text-xs sm:text-base mx-auto flex flex-col justify-center items-start gap-4" id="divJenisMakanan"></div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-2xl sm:text-4xl  text-purple-700">BAHAN</h1>
+        <p class="text-center text-purple-600 mb-3 sm:mb-5 text-xs sm:text-base">Unsur yang digunakan untuk membuat atau menghasilkan produk yang dipersyaratkan dalam SJPH.</p>
+        <div class="flex flex-col sm:flex-row justify-start items-start gap-4">
+            <div class="w-full w-6/12 rounded-xl shadow-md bg-purple-100 overflow-hidden p-3 sm:p-5 text-purple-600 sm:text-xl">
+                <ol class="list-decimal ms-5">
+                    <li class="mb-0 sm:mb-2">Bahan Baku</li>
+                    <li class="mb-0 sm:mb-2">Bahan Tambahan</li>
+                    <li class="mb-0 sm:mb-2">Bahan Penolong</li>
+                    <li class="mb-0 sm:mb-2">Kemasan Produk</li>
+                    <li>Bahan Penolong Pencucian</li>
+                </ol>
+            </div>
+            <div class="w-full w-6/12 rounded-xl shadow-md bg-purple-100 overflow-hidden p-3 sm:p-5 text-purple-600">
+                <p class="font-bold">Bahan Baku & Bahan Tambahan</p>
+                <p class="mb-3">Digunakan dalam pembuatan produk & menjadi bagian dari komposisi produk (ingredient).</p>
+                <p class="font-bold">Bahan Penolong</p>
+                <p class="">Digunakan untuk membantu proses produksi, tetapi tidak menjadi bagian dari komposisi.</p>
+                <p class="italic">Contoh: enzim, pelarut, air untuk mencuci peralatan, kuas untuk mengoles.</p>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-center">KRITERIA BAHAN <span class="italic">SELF DECLARE</span></h1>
+        <div class="w-full sm:w-7/12 mx-auto text-sm sm:text-base flex flex-col justify-center items-center gap-3 sm:gap-5">
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700">
+                <p class="text-start">Bahan yang digunakan sudah dipastikan kehalalannya.</p>
+                <ol class="list-disc ms-5">
+                    <li>Dibuktikan dengan sertifikat halal.</li>
+                    <li>Termasuk dalam daftar bahan sesuai KMA Nomor 1360 Tahun 2021.</li>
+                </ol>
+                <p class="text-justify">Tidak menggunakan bahan berbahaya.</p>
+                <p class="text-purple-500 italic text-xs sm:text-sm mt-3 text-end">Keputusan Kepala BPJPH Nomor 150 Tahun 2022</p>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-base sm:text-4xl mb-3 sm:mb-5 text-purple-700">KATEGORI BAHAN</h1>
+        <div class="w-full sm:w-8/12 mx-auto text-sm sm:text-base flex flex-col justify-center items-center gap-3 sm:gap-5">
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700">
+                <p class="font-bold text-sm sm:text-xl mb-2 sm:mb-3">Bahan Tidak Diragukan</p>
+                <p class="text-justify text-xs sm:text-base">Bahan yang tidak kritis dari aspek halal sehingga tidak harus dilengkapi dengan Sertifikat Halal. Kategori bahan tidak diragukan diatur dalam KMA Nomor 1360 tahun 2021.</p>
+            </div>
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700">
+                <p class="font-bold text-sm sm:text-xl mb-2 sm:mb-3">Bahan Diragukan</p>
+                <ol class="list-decimal text-xs sm:text-base ms-3 sm:ms-5">
+                    <li>Berasal dari atau mengandung unsur hewan sembelihan dan turunannya.</li>
+                    <li>Sulit ditelusuri kehalalannya.</li>
+                    <li>Mengandung bahan kompleks, ditinjau dari sisi kekritisan bahan dan kerumitan proses pembuatannya.</li>
+                    <li>Flavor dan fragrance.</li>
+                </ol>
+                <ol class="list-disc text-xs sm:text-base ms-3 sm:ms-5 mt-2 sm:mt-3">
+                    <li>Dibuktikan dengan sertifikat halal.</li>
+                    <li>Dijelaskan proses produk halal.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-base sm:text-4xl mb-3 sm:mb-5 text-center">HALAL HARAM DALAM MAQOLAH ULAMA</h1>
+        <div class="w-full sm:w-7/12 mx-auto text-sm sm:text-base flex flex-col justify-center items-center gap-3 sm:gap-5">
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700 text-justify">“Hukum asal sesuatu yang bermanfaat adalah halal, hukum asal sesuatu yang berbahaya adalah haram”.</div>
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700 text-justify">“Jika perkara halal dan haram berkumpul, maka yang dimenangkan adalah yang haram”.</div>
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700 text-justify">“Keadaan darurat membolehkan suatu yang terlarang”.</div>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">MAKANAN HALAL & THOYIB</h1>
+        <div class="w-full sm:w-8/12 mx-auto text-sm sm:text-base flex flex-col justify-center items-center gap-3 sm:gap-5">
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700 text-justify">Istilah “halal” berarti jenis makanan yang boleh dikonsumsi dan tidak diharamkan. Istilah “thoyib” berarti jenis makanan yang bisa dinikmati, memberi manfaat karena telah memenuhi standar kesehatan (gizi, protein, higienis, dll.), tidak madharat bagi kesehatan fisik dan psikis, serta diperoleh dengan cara halal.</div>
+            <div class="w-full rounded-xl sm:rounded-3xl p-3 sm:p-5 bg-purple-200 text-purple-700">
+                <p class="text-justify">“Dan makanlah dari apa yang telah diberikan Allah kepadamu sebagai rezeki yang halal dan baik, dan bertakwalah kepada Allah yang kamu beriman kepada-Nya”.</p>
+                <p class="italic text-end text-xs">(QS. Al-Maidah : 88)</p>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-lg sm:text-3xl text-center mb-3">SEBAB KEHARAMAN MAKANAN</h1>
+        <div class="w-full sm:w-6/12 mx-auto text-sm sm:text-base">
+            <ol class="list-disc ms-4 sm:ms-10 text-purple-200 text-base sm:text-xl">
+                <li class="ps-1">An Najis, Al Mutanajis (najis, terkenanajis), seperti darah & makanan terkena najis;</li>
+                <li class="ps-1">Al Kadar, Al Khobats (kotor, jijik), seperti kecoa & belatung;</li>
+                <li class="ps-1">Al Dhoror (membahayakan), seperti racun & formalin;</li>
+                <li class="ps-1">Al Iskar (merusak fungsi akal), seperti khomr & narkoba;</li>
+                <li class="ps-1">Al Muftarisah (binatang buas), seperti serigala & elang; dan,</li>
+                <li class="ps-1">Al Barma’iah (binatang amfibi), seperti katak & sesilia.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">NAJIS SUCI</h1>
+        <div class="w-full sm:w-6/12 text-xs sm:text-base mx-auto">
+            <ol class="list-disc text-purple-700 ms-6 sm:ms-14 text-base sm:text-xl">
+                <li class="mb-3">Najis adalah sesuatu yang kotor yang mencegah keabsahan ibadah.</li>
+                <li class="mb-3">Suci adalah keadaan tidak terkena najis dan atau tidak sedang berhadats kecil & besar.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-lg sm:text-3xl text-center mb-3">MACAM NAJIS</h1>
+        <div class="w-full sm:w-6/12 mx-auto text-sm sm:text-base">
+            <ol class="list-disc ms-3 sm:ms-9 text-purple-200 text-sm sm:text-xl text-justify">
+                <li class="ps-1">Najis Mukhoffafah (ringan), contoh : air kencing bayi laki-laki belum usia 2 tahun, cara mensucikan dengan menciprati air.</li>
+                <li class="ps-1">Najis Mutawashitoh (sedang), contoh : kotoran hewan, darah manusia, cara mensucikan dengan menyiramkan air hingga bau, warna dan rasa hilang.</li>
+                <li class="ps-1">Najis Mugholadzoh (berat), contoh : hal berasal dari anjing dan babi (air liur, kotoran, dll), cara mensucikan dengan menyiramkan air sebanyak 7 kali, salah satunya dicampur debu.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">NAJIS MA'FU</h1>
+        <div class="w-full sm:w-6/12 text-xs sm:text-base mx-auto">
+            <ol class="list-none text-purple-700 text-base sm:text-xl text-justify">
+                <li class="mb-3">Selain tiga najis yang sudah disebutkan diatas, ada pula najis ma’fu (dimaafkan). Apabila terkena najis ma’fu, kita tidak perlu mensucikanya.</li>
+                <li class="">Contoh : bangkai binatang yang tidak mengeluarkan darah mengalir, keluar darah atau nanah dari kulit dengan jumlah yang sedikit, terkena asap dari pembakaran daging babi atau anjing.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-base sm:text-3xl text-center mb-3">RELASI NAJIS SUCI DENGAN HALAL HARAM</h1>
+        <div class="w-full sm:w-6/12 mx-auto text-sm sm:text-base">
+            <ol class="list-disc ms-3 sm:ms-6 text-purple-200 text-sm sm:text-xl text-justify">
+                <li class="ps-1">Sesuatu yang halal dikonsumsi bisa menjadi haram jika terkena najis (mutanajis), contoh : makanan atau minuman yang terkena kotoran hewan.</li>
+                <li class="ps-1">Sesuatu yang suci tidak otomatis halal dikonsumsi, contoh : narkoba, daun ganja, dll (suci tapi haram dikonsumsi)</li>
+                <li class="ps-1">Halal haram identik dengan konsumsi, suci najis identik dengan pemakaian, contoh : makanan halal / haram, pakaian suci / najis.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">FATWA HUKUM FIKIH</h1>
+        <div class="w-full sm:w-6/12 text-xs sm:text-base mx-auto">
+            <ol class="list-none text-purple-700 text-base sm:text-xl text-justify">
+                <li class="mb-3 text-center">Ketetapan yang dikeluarkan oleh ulama, baik individu maupun kolektif.</li>
+                <li class="mb-3 text-center">Dimintakan oleh umat secara personal maupun komunal.</li>
+                <li class="mb-3 text-center">Penjelasan hukum fikih atas fenomena yang terjadi.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-base sm:text-3xl text-center mb-3">DALIL FATWA HUKUM FIKIH</h1>
+        <div class="w-full sm:w-6/12 mx-auto text-sm sm:text-base">
+            <ol class="list-none text-purple-200 text-sm sm:text-xl text-justify">
+                <li class="mb-3 text-center">Ayat Al-Qur’an sebagai rujukan utama.</li>
+                <li class="mb-3 text-center">Hadist Nabi SAW sebagai rujukan utama.</li>
+                <li class="mb-3 text-center">Ijma (Kesepakatan Ulama).</li>
+                <li class="mb-3 text-center">Qiyas (Proses Analog Hukum).</li>
+                <li class="mb-3 text-center">Beberapa dalil syar’i lainnya (Seperti Al Maslahah, AlMursalah, AlIstihsan, AlIstiqro, dll).</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-lg sm:text-4xl mb-3 sm:mb-5 text-purple-700">KOMISI FATWA MUI</h1>
+        <div class="w-full sm:w-6/12 text-xs sm:text-base mx-auto">
+            <ol class="list-none text-purple-700 text-base sm:text-xl text-justify">
+                <li class="mb-3">Komisi Fatwa (KF) berdiri bersamaan dengan berdirinya Majelis Ulama Indonesia (MUI) pada 17 Rajab 1395 Hijriah atau 26 Juli 1975.</li>
+                <li class="">Bersidang setiap minggu dan atau setiap ada permohonan mendesak dibidang keagamaan (sosbudpolkestek).</li>
+            </ol>
+        </div>
+    </section>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-purple-400 font-bold text-xl sm:text-3xl text-center mb-3">FATWA<br>MAJELIS ULAMA INDONESIA</h1>
+        <div class="w-full sm:w-6/12 mx-auto flex flex-col justify-center items-center gap-3">
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 11 Tahun 2009</p>
+                <h1 class="font-bold">Hukum Alkohol</h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 12 Tahun 2009</p>
+                <h1 class="font-bold">Standar Sertifikasi Penyembelihan Hewan</h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 01 Tahun 2010</p>
+                <h1 class="font-bold">Penggunaan Mikroba dan Produk Mikrobial dalam produk Pangan</h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 02 Tahun 2010</p>
+                <h1 class="font-bold">Air Daur Ulang</h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 07 Tahun 2010</p>
+                <h1 class="font-bold">Kopi Luwak</h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 10 Tahun 2011</p>
+                <h1 class="font-bold">Cara Pensucian Ekstrak Ragi <span class="italic">(Yeast Extract)</span> dari Sisa Pengolahan Bir <span class="italic">(Brewer Yeast)</span></h1>
+            </div>
+            <div class="w-full text-center bg-purple-200 p-2 rounded-xl sm:rounded-r-full sm:rounded-l-full text-purple-700 text-sm sm:text-base">
+                <p>Nomor 25 Tahun 2012</p>
+                <h1 class="font-bold">Hukum Mengonsumsi Bekicot</h1>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-full py-0 sm:py-10 px-0 sm:px-5  flex justify-center items-center gap-5 shadow-md footerBpjph"></section>
 
     <!-- SCRIPT START -->
     <script src="../bpjph.js"></script>
+    <script src="../bahan.js"></script>
     <script>
         AOS.init();
     </script>
