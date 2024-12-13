@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BPJPH</title>
-  <link rel="shortcut icon" href="../../assets/Logo BPJPH.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/Logo BPJPH.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,42 +15,43 @@
   </style>
 </head>
 <body id="beranda" class="cursor-default">
-    <nav class="w-full px-10 py-2 shadow-md bg-white sticky top-0 flex justify-between items-center">
+    <nav class="w-full px-2 sm:px-10 py-2 shadow-md bg-white sticky top-0 flex justify-between items-center">
         <div onclick="window.location.href = '#beranda'" class="flex justify-center items-center gap-2">
-            <img src="../../assets/Logo BPJPH.png" alt="BPJPH" class="h-12">
-            <div class="flex flex-col justify-center items-start">
+            <img src="../assets/Logo BPJPH.png" alt="BPJPH" class="h-6 sm:h-12">
+            <span class="font-black hidden text-xl text-purple-800">BPJPH</span>
+            <div class="sm:flex flex-col justify-center items-start hidden">
                 <h2 class="text-xs">BADAN PENYELENGGARA</h2>
                 <h2 class="text-xs font-bold">JAMINAN PRODUK HALAL</h2>
                 <h2 class="text-xs">KEMENTRIAN AGAMA RI</h2>
             </div>
         </div>
-        <div class="flex justify-center items-center gap-5">
-            <h1 class="text-purple-900 font-bold text-2xl uppercase" id="judulBpjph"></h1>
-            <img src="../../assets/Logo Halal Indonesia.png" alt="Halal Indonesia" class="h-12">
+        <div class="flex justify-center items-center gap-3 sm:gap-5">
+            <h1 class="text-purple-900 font-bold text-end text-xs sm:text-2xl uppercase" id="judulBpjph"></h1>
+            <img src="../assets/Logo Halal Indonesia.png" alt="Halal Indonesia" class="hidden sm:block h-6 sm:h-12">
             <i class="bi-x-lg text-gray-300 hover:text-red-500 cursor-pointer duration-300 hidden" onclick="window.close()"></i>
         </div>
     </nav>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-r from-purple-900 to-purple-600 flex justify-center items-center gap-10 shadow-md">
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10 shadow-md">
         <div class="w-full h-full flex flex-col justify-between items-start">
-            <div class="w-full flex justify-between items-center mb-5">
+            <div class="w-full flex justify-between items-center mb-3 sm:mb-5">
                 <div class="flex flex-col justify-center items-start">
-                    <h1 class="font-bold text-purple-400 text-5xl">Kewajiban</h1>
-                    <h1 class="font-bold text-purple-400 text-5xl">Sertifikasi</h1>
-                    <h1 class="font-bold text-purple-400 text-5xl">Halal</h1>
+                    <h1 class="font-bold text-purple-400 text-3xl sm:text-5xl">Kewajiban</h1>
+                    <h1 class="font-bold text-purple-400 text-3xl sm:text-5xl">Sertifikasi</h1>
+                    <h1 class="font-bold text-purple-400 text-3xl sm:text-5xl">Halal</h1>
                 </div>
-                <span class="w-48 h-48 p-6 rounded-full border-4 border-double border-white flex justify-center items-center text-center text-xs text-white bg-purple-600 shadow-lg">Untuk Pelaku Usaha Mikro dan Kecil , kewajiban bersertifikat halal sebagaimana dimaksud dalam Pasal 4 didasarkan atas pernyataan pelaku usaha Mikro dan Kecil.</span>
+                <span class="w-40 sm:w-48 h-40 sm:h-48 p-3 sm:p-6 rounded-3xl sm:rounded-full border-4 border-double border-white flex justify-center items-center text-center text-xs text-white bg-purple-600 shadow-lg">Untuk Pelaku Usaha Mikro dan Kecil , kewajiban bersertifikat halal sebagaimana dimaksud dalam Pasal 4 didasarkan atas pernyataan pelaku usaha Mikro dan Kecil.</span>
             </div>
-            <p class="font-medium text-purple-300">Produk yang masuk , beredar , dan diperdagangkan di wilayah Indonesia wajib bersertifikat halal</p>
-            <span class="block text-xs text-light mb-5">Undang-undang Nomor 33 Tahun 2014 Pasal 4</span>
-            <p class="font-medium text-purple-300">Mandatori :</p>
-            <p class="">Per 17 Oktober 2024, semua produk makanan dan minuman yang beredar dan diperdagangkan di seluruh wilayah Indonesia wajib bersertifikat halal</p>
+            <p class="font-medium text-sm sm:text-base text-purple-300">Produk yang masuk , beredar , dan diperdagangkan di wilayah Indonesia wajib bersertifikat halal</p>
+            <span class="block text-xs text-light mb-3 sm:mb-5">Undang-undang Nomor 33 Tahun 2014 Pasal 4</span>
+            <p class="font-medium text-sm sm:text-base text-purple-300">Mandatori :</p>
+            <p class="text-xs sm:text-base">Per 17 Oktober 2024, semua produk makanan dan minuman yang beredar dan diperdagangkan di seluruh wilayah Indonesia wajib bersertifikat halal</p>
         </div>
-        <div class="w-full rounded-3xl p-10 shadow-lg bg-white/80">
-            <h1 class="font-bold text-purple-600 text-xl mb-3">PRODUK</h1>
+        <div class="w-full rounded-3xl p-4 sm:p-10 shadow-lg bg-white/80">
+            <h1 class="font-bold text-purple-600 text-base sm:text-xl mb-1 sm:mb-3">PRODUK</h1>
             <div class="flex justify-between items-start gap-5 text-purple-950">
                 <div class="w-full">
-                    <h1 class="font-bold text-purple-600 text-lx">Barang</h1>
-                    <ol class="list-disc ms-5">
+                    <h1 class="font-bold text-purple-600 text-sm sm:text-xl">Barang</h1>
+                    <ol class="list-disc ms-5 text-xs sm:text-base">
                         <li>Makanan</li>
                         <li>Minuman</li>
                         <li>Obat</li>
@@ -61,8 +62,8 @@
                     </ol>
                 </div>
                 <div class="w-full">
-                    <h1 class="font-bold text-purple-600 text-lx">Jasa</h1>
-                    <ol class="list-disc ms-5">
+                    <h1 class="font-bold text-purple-600 text-sm sm:text-xl">Jasa</h1>
+                    <ol class="list-disc ms-5 text-xs sm:text-base">
                         <li>Penyembelihan</li>
                         <li>Pengolahan</li>
                         <li>Penyimpanan</li>
@@ -75,61 +76,61 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-full p-10 shadow-md">
-        <h1 class="text-center font-bold text-5xl mb-10 text-purple-700">Penahapan Kewajiban Bersertifikat Halal</h1>
-        <table class="w-10/12 mx-auto text-purple-900">
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center font-bold text-2xl sm:text-5xl mb-4 sm:mb-10 text-purple-700">Penahapan Kewajiban Bersertifikat Halal</h1>
+        <table class="w-full sm:w-10/12 mx-auto text-purple-900 text-xs sm:text-base">
             <thead>
                 <tr>
-                    <th class="border border-gray-300 bg-purple-700 text-white px-3 py-1 text-start" width="15%">KATEGORI</th>
-                    <th class="border border-gray-300 bg-purple-700 text-white px-3 py-1 text-start">KETERANGAN</th>
-                    <th class="border border-gray-300 bg-purple-700 text-white px-3 py-1" width="30%">TANGGAL</th>
+                    <th class="border border-gray-300 bg-purple-700 text-white px-2 sm:px-3 py-1 text-start" width="15%">KATEGORI</th>
+                    <th class="border border-gray-300 bg-purple-700 text-white px-2 sm:px-3 py-1 text-start">KETERANGAN</th>
+                    <th class="border border-gray-300 bg-purple-700 text-white px-2 sm:px-3 py-1" width="30%">TANGGAL</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" rowspan="3">Obat</td>
-                    <td class="border border-gray-300 px-3 py-2">Obat tradisional , obat kuasi , suplemen kesehatan</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2026</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" rowspan="3">Obat</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Obat tradisional , obat kuasi , suplemen kesehatan</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2026</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Obat bebas dan obat bebas terbatas</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2029</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Obat bebas dan obat bebas terbatas</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2029</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Obat keras dikecualikan psikotropika</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2034</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Obat keras dikecualikan psikotropika</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2034</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" colspan="2">Kosmetik</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center" rowspan="4">17 Oktober 2021 s/d 17 Oktober 2026</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" colspan="2">Kosmetik</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center" rowspan="4">17 Oktober 2021 s/d 17 Oktober 2026</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" colspan="2">Produk Kimiawi</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" colspan="2">Produk Kimiawi</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" colspan="2">Produk Biologi</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" colspan="2">Produk Biologi</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" colspan="2">Produk Rekayasa Genetika</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" colspan="2">Produk Rekayasa Genetika</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2" rowspan="5">Barang Gunaan</td>
-                    <td class="border border-gray-300 px-3 py-2">Barang gunaan yang dipakai kategori sandang,penutup kepala , aksesoris</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center" rowspan="3">17 Oktober 2021 s/d 17 Oktober 2026</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2" rowspan="5">Barang Gunaan</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Barang gunaan yang dipakai kategori sandang,penutup kepala , aksesoris</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center" rowspan="3">17 Oktober 2021 s/d 17 Oktober 2026</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Barang gunaan yang digunakan kategori perbekalan Kesehatan rumah tangga , peralatan rumah tangga , perlengkapan peribadatan bagi umat Islam, alat tulis , perlengkapan kantor</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Barang gunaan yang digunakan kategori perbekalan Kesehatan rumah tangga , peralatan rumah tangga , perlengkapan peribadatan bagi umat Islam, alat tulis , perlengkapan kantor</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas A</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas A</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas B</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2029</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas B</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2029</td>
                 </tr>
                 <tr>
-                    <td class="border border-gray-300 px-3 py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas C</td>
-                    <td class="border border-gray-300 px-3 py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2034</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2">Barang gunaan yang dimanfaatkan kategori alat Kesehatan risiko kelas C</td>
+                    <td class="border border-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-center">17 Oktober 2021 s/d 17 Oktober 2034</td>
                 </tr>
                 <tr>
                     <td class="px-1 text-end text-xs italic text-gray-400" colspan="3">* Peraturan Pemerintah Nomor 39 Tahun 2021 Pasal 141</td>
@@ -137,25 +138,25 @@
             </tbody>
         </table>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
-        <h1 class="text-center font-bold text-5xl mb-10 text-purple-300">Regulasi Jaminan Produk Halal</h1>
-        <div class="w-10/12 mx-auto flex flex-col justify-center items-center gap-5">
-            <span class="block w-full p-5 text-center text-xl rounded-3xl bg-white/30 shadow-md">Pemerintah menyusun kebijakan terkait jaminan produk halal sebagai upaya mendorong pengembangan industri halal untuk pasar domestik dan meningkatkan ekspor produk halal Indonesia dalam pasar global</span>
-            <span class="block w-full p-5 text-center text-xl rounded-3xl bg-white/30 shadow-md">BPJPH dalam mendukung pelaksanaan jaminan produk halal bagi produk UMK, mendorong penyesuaian regulasi JPH yang mengatur kemudahan sertifikasi halal bagi usaha mikro dan kecil. Kemudahan sertifikasi halal bagi pelaku usaha mikro dan kecil yang memenuhi standar halal yang ditetapkan oleh BPJPH</span>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-center font-bold text-xl sm:text-5xl mb-3 sm:mb-10 text-purple-300">Regulasi Jaminan Produk Halal</h1>
+        <div class="w-full sm:w-10/12 mx-auto flex flex-col justify-center items-center gap-3 sm:gap-5">
+            <span class="block w-full p-3 sm:p-5 text-center text-sm sm:text-xl rounded-3xl bg-white/30 shadow-md">Pemerintah menyusun kebijakan terkait jaminan produk halal sebagai upaya mendorong pengembangan industri halal untuk pasar domestik dan meningkatkan ekspor produk halal Indonesia dalam pasar global</span>
+            <span class="block w-full p-3 sm:p-5 text-center text-sm sm:text-xl rounded-3xl bg-white/30 shadow-md">BPJPH dalam mendukung pelaksanaan jaminan produk halal bagi produk UMK, mendorong penyesuaian regulasi JPH yang mengatur kemudahan sertifikasi halal bagi usaha mikro dan kecil. Kemudahan sertifikasi halal bagi pelaku usaha mikro dan kecil yang memenuhi standar halal yang ditetapkan oleh BPJPH</span>
         </div>
     </section>
-    <section class="w-full h-full flex justify-center items-start gap-10 p-10 shadow-md">
-        <div class="w-5/12">
-            <span class="w-44 h-44 mx-auto p-6 rounded-full flex justify-center items-center text-center bg-purple-500 shadow-md mb-10 text-white">UU No. 33 Tahun 2014 tentang Jaminan Produk Halal</span>
-            <div class="w-full flex flex-col justify-center items-center gap-5 text-purple-900">
+    <section class="w-full h-full flex justify-center items-start gap-5 sm:gap-10 p-4 sm:p-10 shadow-md">
+        <div class="w-full sm:w-5/12">
+            <span class="w-32 sm:w-44 h-32 sm:h-44 mx-auto p-3 sm:p-6 rounded-full flex justify-center items-center text-center bg-purple-500 shadow-md mb-4 sm:mb-10 text-sm sm:text-base text-white">UU No. 33 Tahun 2014 tentang Jaminan Produk Halal</span>
+            <div class="w-full flex flex-col justify-center items-center gap-3 sm:gap-5 text-xs sm:text-base text-purple-900">
                 <span class="text-center">Kemudahan Pelaku Usaha Mikro dan Kecil dalam pemenuhan kewajiban bersertifikat halal melalui pernyataan pelaku usaha mikro dan kecil</span>
                 <span class="text-center">Penghapusan kewenangan MUI pelaksanaan sertifikasi Auditor Halal dan akreditasi LPH</span>
                 <span class="text-center">Pemberian kemudahan Penyelia Halal bagi pelaku usaha Mikro dan Kecil</span>
             </div>
         </div>
-        <div class="w-5/12">
-            <span class="w-44 h-44 mx-auto p-6 rounded-full flex justify-center items-center text-center text-purple-900 bg-purple-300 shadow-md mb-10">UU No. 11 Tahun 2020 tentang Cipta Kerja</span>
-            <div class="w-full flex flex-col justify-center items-center gap-5 text-purple-900">
+        <div class="w-full sm:w-5/12">
+            <span class="w-32 sm:w-44 h-32 sm:h-44 mx-auto p-3 sm:p-6 rounded-full flex justify-center items-center text-center text-purple-900 bg-purple-300 shadow-md mb-4 sm:mb-10 text-sm sm:text-base">UU No. 11 Tahun 2020 tentang Cipta Kerja</span>
+            <div class="w-full flex flex-col justify-center items-center gap-3 sm:gap-5 text-xs sm:text-base text-purple-900">
                 <span class="text-center">Pengaturan kepastian waktu dalam layanan sertifikasi halal di BPJPH, LPH, dan MUI</span>
                 <span class="text-center">Pemberian kemudahan bagi pelaku usaha dalam perpanjangan sertifikat halal</span>
                 <span class="text-center">Pemberian kemudahan pembiayaan sertifikasi halal bagi Pelaku Usaha Mikro dan Kecil</span>
@@ -163,31 +164,31 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
-        <div class="flex justify-center items-center mb-10">
-            <span class="w-44 h-44 p-6 rounded-full flex justify-center items-center text-center bg-purple-300 shadow-md text-purple-900">UU No. 11 Tahun 2020 tentang Cipta Kerja</span>
-            <span class="w-44 h-44 text-center text-9xl font-black text-white">=</span>
-            <span class="w-44 h-44 p-6 rounded-full flex justify-center items-center text-center bg-purple-500 shadow-md text-white">Perpu 2 Tahun 2022 tentang Cipta Kerja</span>
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <div class="flex justify-center items-center mb-4 sm:mb-10">
+            <span class="w-32 sm:w-44 h-32 sm:h-44 p-3 sm:p-6 text-sm sm:text-base rounded-full flex justify-center items-center text-center bg-purple-300 shadow-md text-purple-900">UU No. 11 Tahun 2020 tentang Cipta Kerja</span>
+            <span class="w-fit sm:w-44 h-fit sm:h-44 p-4 sm:p-0 text-center text-4xl sm:text-9xl font-black text-white">=</span>
+            <span class="w-32 sm:w-44 h-32 sm:h-44 p-3 sm:p-6 text-sm sm:text-base rounded-full flex justify-center items-center text-center bg-purple-500 shadow-md text-white">Perpu 2 Tahun 2022 tentang Cipta Kerja</span>
         </div>
-        <div class="w-10/12 mx-auto flex flex-col justify-center items-center gap-5">
-            <div class="w-full p-5 rounded-3xl bg-white/30 shadow-md">
-                <h1 class="text-purple-200 font-bold text-xl text-center mb-5">SERTIFIKAT HALAL REGULER</h1>
-                <ol class="list-decimal ms-5">
+        <div class="w-full sm:w-10/12 mx-auto flex flex-col justify-center items-center gap-5">
+            <div class="w-full p-3 sm:p-5 rounded-3xl bg-white/30 shadow-md">
+                <h1 class="text-purple-200 font-bold text-base sm:text-xl text-center mb-3 sm:mb-5">SERTIFIKAT HALAL REGULER</h1>
+                <ol class="list-decimal ms-5 text-xs sm:text-base">
                     <li>Penetapan kehalalan Produk dilakukan oleh MUI, MUI Provinsi, MUI Kabupaten /Kota, atau Majelis Permusyawaratan.</li>
-                    <li>Dalam hal batas waktu p enetapan kehalalan Produk dilakukan oleh MUI, MUI Provinsi, MUI Kabupaten /Kota, atau Majelis Permusyawaratan Ulama Aceh terlampaui, penetapan kehalalan Produk dilakukan oleh Komite Fatwa Produk Halal , berdasarkan ketentuan Fatwa Halal.</li>
+                    <li>Dalam hal batas waktu p enetapan kehalalan Produk dilakukan oleh MUI, MUI Provinsi, MUI Kabupaten / Kota, atau Majelis Permusyawaratan Ulama Aceh terlampaui, penetapan kehalalan Produk dilakukan oleh Komite Fatwa Produk Halal , berdasarkan ketentuan Fatwa Halal.</li>
                     <li>Penetapan kehalalan Produk oleh Komite Fatwa Produk Halal dilakukan paling lama 2 (dua) hari kerja.</li>
                 </ol>
             </div>
-            <div class="w-full p-5 rounded-3xl bg-white/30 shadow-md">
-                <h1 class="text-purple-200 font-bold text-xl text-center mb-5">SERTIFIKAT HALAL DENGAN PERNYATAAN HALAL</h1>
-                <ol class="list-decimal ms-5">
+            <div class="w-full p-3 sm:p-5 rounded-3xl bg-white/30 shadow-md">
+                <h1 class="text-purple-200 font-bold text-base sm:text-xl text-center mb-3 sm:mb-5">SERTIFIKAT HALAL DENGAN PERNYATAAN HALAL</h1>
+                <ol class="list-decimal ms-5 text-xs sm:text-base">
                     <li>Dalam permohonan sertifikasi halal dilakukan oleh Pelaku Usaha mikro dan kecil melalui pernyataan halal, penetapan kehalalan Produk dilakukan oleh Komite Fatwa Produk Halal berdasarkan ketentuan Fatwa Halal.</li>
                     <li>Penetapan kehalalan Produk oleh Komite Fatwa Produk Halal dilakukan paling lama I (satu) hari kerja sejak diterimanya hasil pendampingan PPH.</li>
                 </ol>
             </div>
-            <div class="w-full p-5 rounded-3xl bg-white/30 shadow-md">
-                <h1 class="text-purple-200 font-bold text-xl text-center mb-5">KOMITE FATWA PRODUK HALAL</h1>
-                <ol class="list-decimal ms-5">
+            <div class="w-full p-3 sm:p-5 rounded-3xl bg-white/30 shadow-md">
+                <h1 class="text-purple-200 font-bold text-base sm:text-xl text-center mb-3 sm:mb-5">KOMITE FATWA PRODUK HALAL</h1>
+                <ol class="list-decimal ms-5 text-xs sm:text-base">
                     <li>Komite Fatwa Produk Halal dibentuk dan bertanggung jawab kepada Menteri.</li>
                     <li>Komite Fatwa Produk Halal terdiri atas unsur :</li>
                     <ol class="list-disc ms-5">
@@ -196,16 +197,16 @@
                     </ol>
                 </ol>
             </div>
-            <div class="w-full p-5 rounded-3xl bg-white/30 shadow-md">
-                <h1 class="text-purple-200 font-bold text-xl text-center mb-5">MASA BERLAKU DAN PERPANJANGAN SERTIFIKAT HALAL</h1>
-                <ol class="list-decimal ms-5">
+            <div class="w-full p-3 sm:p-5 rounded-3xl bg-white/30 shadow-md">
+                <h1 class="text-purple-200 font-bold text-base sm:text-xl text-center mb-3 sm:mb-5">MASA BERLAKU DAN PERPANJANGAN SERTIFIKAT HALAL</h1>
+                <ol class="list-decimal ms-5 text-xs sm:text-base">
                     <li>Sertifikat halal terus belaku sepanjang tidak ada perubahan komposisi bahan tanpa proses perpanjangan.</li>
                     <li>Dalam hal pemeriksaan terdapat perubahan komposisi bahan wajib dilakukan pembaharuan sertifikat halal.</li>
                 </ol>
             </div>
-            <div class="w-full p-5 rounded-3xl bg-white/30 shadow-md">
-                <h1 class="text-purple-200 font-bold text-xl text-center mb-5">LAYANAN PENYELENGGARAAN JPH BERBASIS SISTEM ELEKTRONIK</h1>
-                <ol class="list-decimal ms-5">
+            <div class="w-full p-3 sm:p-5 rounded-3xl bg-white/30 shadow-md">
+                <h1 class="text-purple-200 font-bold text-base sm:text-xl text-center mb-3 sm:mb-5">LAYANAN PENYELENGGARAAN JPH BERBASIS SISTEM ELEKTRONIK</h1>
+                <ol class="list-decimal ms-5 text-xs sm:text-base">
                     <li>Layanan penyelenggaraan JPH wajib menggunakan sistem elektronik terintegrasi.</li>
                     <li>Sistem elektronik terintegrasi menghubungkan proses layanan sertifikasi halal yang dilakukan oleh :</li>
                     <ol class="list-disc ms-5">
@@ -220,10 +221,10 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-full p-10 shadow-md">
-        <h1 class="text-center text-purple-900 font-bold text-4xl mb-10">STAKEHOLDER UTAMA DALAM SERTIFIKASI HALAL DI INDONESIA</h1>
-        <div class="flex justify-center items-center gap-10">
-            <div class="w-2/12 text-xs flex flex-col justify-center items-center gap-5">
+    <section class="w-full h-full p-4 sm:p-10 shadow-md">
+        <h1 class="text-center text-purple-900 font-bold text-xl sm:text-4xl mb-4 sm:mb-10">STAKEHOLDER UTAMA DALAM SERTIFIKASI HALAL DI INDONESIA</h1>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-10">
+            <div class="w-full sm:w-2/12 order-2 sm:order-1 text-xs flex flex-col justify-center items-center gap-5">
                 <div class="w-full rounded-xl p-2 shadow-md bg-purple-200">
                     <div class="flex flex-col justify-center items-center gap-1 mb-2 text-center">
                         <i class="bi-cash-coin text-purple-900 text-6xl"></i>
@@ -247,73 +248,73 @@
                     </ol>
                 </div>
             </div>
-            <div class="w-6/12">
-                <div class="flex justify-center items-center gap-10 w-full mb-5">
+            <div class="w-full w-6/12 order-1 sm:order-2">
+                <div class="flex justify-center items-center gap-10 w-full mb-3 sm:mb-5">
                     <div class="flex justify-center items-center gap-1">
-                        <img src="../../assets/Logo MUI.png" alt="MUI" class="w-12">
-                        <h1 class="font-black text-4xl">MUI</h1>
+                        <img src="../assets/Logo MUI.png" alt="MUI" class="w-8 sm:w-12">
+                        <h1 class="font-black text-xl sm:text-4xl">MUI</h1>
                     </div>
                     <div class="flex justify-center items-center gap-1">
-                        <img src="../../assets/Logo BPJPH.png" alt="BPJPH" class="w-12">
-                        <h1 class="font-black text-4xl">BPJPH</h1>
+                        <img src="../assets/Logo BPJPH.png" alt="BPJPH" class="w-8 sm:w-12">
+                        <h1 class="font-black text-xl sm:text-4xl">BPJPH</h1>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center w-full gap-5">
+                <div class="flex flex-col justify-center items-center w-full gap-3 sm:gap-5">
                     <div class="flex justify-center items-start w-full">
-                        <div class="w-1/2 border-r-4 border-gray-400 flex flex-col justify-center items-end p-3 gap-10">
+                        <div class="w-1/2 border-r-4 border-gray-400 flex flex-col justify-center items-end p-2 sm:p-3 gap-4 sm:gap-10">
                             <div class="w-fit rounded-l-full rounded-r-full border border-purple-500 text-center px-3 py-1">
-                                <h1 class="underline text-purple-800 font-bold">REGULER</h1>
-                                <p class="text-sm text-purple-600">Berbayar</p>
+                                <h1 class="underline text-sm sm:text-base text-purple-800 font-bold">REGULER</h1>
+                                <p class="text-xs sm:text-sm text-purple-600">Berbayar</p>
                             </div>
-                            <div class="flex justify-center items-center text-purple-800 gap-3">
-                                <h1 class="text-end">LEMBAGA PEMERIKSA<br>HALAL</h1>
-                                <i class="bi-buildings text-5xl"></i>
+                            <div class="flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                                <h1 class="text-end text-xs sm:text-base">LEMBAGA PEMERIKSA<br>HALAL</h1>
+                                <i class="bi-buildings text-2xl sm:text-5xl"></i>
                             </div>
-                            <div class="flex justify-center items-center text-purple-800 gap-3">
-                                <h1 class="text-end">AUDITOR<br>HALAL</h1>
-                                <i class="bi-person-check text-5xl"></i>
+                            <div class="flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                                <h1 class="text-end text-xs sm:text-base">AUDITOR<br>HALAL</h1>
+                                <i class="bi-person-check text-2xl sm:text-5xl"></i>
                             </div>
                         </div>
-                        <div class="w-1/2 flex flex-col justify-center items-start p-3 gap-10">
+                        <div class="w-1/2 flex flex-col justify-center items-start p-2 sm:p-3 gap-4 sm:gap-10">
                             <div class="w-fit rounded-l-full rounded-r-full border border-purple-500 text-center px-3 py-1">
-                                <h1 class="underline text-purple-800 font-bold">SELF DECLARE</h1>
-                                <p class="text-sm text-purple-600">Dibayar</p>
+                                <h1 class="underline text-sm sm:text-base text-purple-800 font-bold">SELF DECLARE</h1>
+                                <p class="text-xs sm:text-sm text-purple-600">Dibayar</p>
                             </div>
-                            <div class="flex justify-center items-center text-purple-800 gap-3">
-                                <i class="bi-building text-5xl"></i>
-                                <h1 class="w-full">LEMBAGAPENDAMPING<br>PPH</h1>
+                            <div class="flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                                <i class="bi-building text-2xl sm:text-5xl"></i>
+                                <h1 class="w-full text-xs sm:text-base">LEMBAGA PENDAMPING<br>PPH</h1>
                             </div>
-                            <div class="flex justify-center items-center text-purple-800 gap-3">
-                                <i class="bi-person-check-fill text-5xl"></i>
-                                <h1 class="">PENDAMPING<br>PPH</h1>
+                            <div class="flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                                <i class="bi-person-check-fill text-2xl sm:text-5xl"></i>
+                                <h1 class="text-xs sm:text-base">PENDAMPING<br>PPH</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full flex justify-center items-center text-purple-800 gap-3">
-                        <i class="bi-person-video3 text-5xl"></i>
-                        <h1 class="">PENYELIA<br>HALAL</h1>
+                    <div class="w-full flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                        <i class="bi-person-video3 text-2xl sm:text-5xl"></i>
+                        <h1 class="text-xs sm:text-base">PENYELIA<br>HALAL</h1>
                     </div>
-                    <div class="w-full flex justify-center items-center text-purple-800 gap-3">
-                        <h1 class="">PELAKU<br>USAHA</h1>
-                        <i class="bi-person-arms-up text-5xl"></i>
+                    <div class="w-full flex justify-center items-center text-purple-800 gap-2 sm:gap-3">
+                        <h1 class="text-xs sm:text-base">PELAKU<br>USAHA</h1>
+                        <i class="bi-person-arms-up text-2xl sm:text-5xl"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
-        <h1 class="text-center text-purple-300 font-bold text-4xl mb-5">ALUR SERTIFIKASI HALAL MELALUI <span class="italic">"SELF DECLARE"</span></h1>
-        <div class="w-6/12 mx-auto p-5 bg-purple-100/50 rounded-3xl shadow-md">
-            <img src="../../assets/Alur Sertifikasi Halal Self Declare.png" class="img-fluid" alt="Alur Sertifikasi Halal Self Declare">
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+        <h1 class="text-center text-purple-300 font-bold text-2xl sm:text-4xl mb-2 sm:mb-5">ALUR SERTIFIKASI HALAL MELALUI <span class="italic">"SELF DECLARE"</span></h1>
+        <div class="w-full sm:w-6/12 mx-auto p-2 sm:p-5 bg-purple-100/50 rounded-3xl shadow-md">
+            <img src="../assets/Alur Sertifikasi Halal Self Declare.png" class="img-fluid" alt="Alur Sertifikasi Halal Self Declare">
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 shadow-md">
-        <h1 class="text-center text-purple-900 font-bold text-4xl mb-10">KETENTUAN SERTIFIKASI BAGI UMK</h1>
-        <div class="w-7/12 mx-auto flex flex-col justify-center items-center gap-5 text-purple-800">
-            <span class="block w-full p-5 text-center text-xl rounded-3xl bg-purple-200 shadow-md">Produk yang dihasilkan oleh Pelaku Usaha mikro dan kecil wajib bersertifikat halal</span>
-            <span class="block w-full p-5 text-center text-xl rounded-3xl bg-purple-200 shadow-md">Kewajiban bersertifikat halal didasarkan atas Pernyataan Pelaku Usaha mikro dan kecil</span>
-            <span class="block w-full p-5 text-center text-xl rounded-3xl bg-purple-200 shadow-md">Pernyataan Pelaku Usaha mikro dan kecil dilakukan berdasarkan standar halal yang ditetapkan oleh BPJPH</span>
-            <span class="block w-full p-5 text-xl rounded-3xl bg-purple-200 shadow-md">
+    <section class="w-full h-full text-white p-4 sm:p-10 shadow-md">
+        <h1 class="text-center text-purple-900 font-bold text-2xl sm:text-4xl mb-4 sm:mb-10">KETENTUAN SERTIFIKASI BAGI UMK</h1>
+        <div class="w-full sm:w-7/12 mx-auto flex flex-col justify-center items-center gap-3 sm:gap-5 text-purple-800 text-base sm:text-xl">
+            <span class="block w-full p-3 sm:p-5 text-center rounded-3xl bg-purple-200 shadow-md">Produk yang dihasilkan oleh Pelaku Usaha mikro dan kecil wajib bersertifikat halal</span>
+            <span class="block w-full p-3 sm:p-5 text-center rounded-3xl bg-purple-200 shadow-md">Kewajiban bersertifikat halal didasarkan atas Pernyataan Pelaku Usaha mikro dan kecil</span>
+            <span class="block w-full p-3 sm:p-5 text-center rounded-3xl bg-purple-200 shadow-md">Pernyataan Pelaku Usaha mikro dan kecil dilakukan berdasarkan standar halal yang ditetapkan oleh BPJPH</span>
+            <span class="block w-full p-3 sm:p-5 rounded-3xl bg-purple-200 shadow-md">
                 <p>Standar halal paling sedikit terdiri atas :</p>
                 <ol class="list-decimal ms-5">
                     <li>adanya Pernyataan Pelaku Usaha yang berupa akad ikrar yang berisi :</li>
@@ -326,15 +327,15 @@
             </span>
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
-        <div class="flex justify-center items-start gap-10">
-            <div class="w-1/3 bg-purple-500 rounded-xl p-5 shadow-md">
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-r from-purple-900 to-purple-600 shadow-md">
+        <div class="flex flex-col sm:flex-row justify-center items-start gap-4 sm:gap-10">
+            <div class="w-full sm:w-1/3 bg-purple-500 rounded-xl p-3 sm:p-5 shadow-md">
                 <h1 class="text-center text-xl font-bold underline mb-2 text-purple-200">Pendampingan PPH</h1>
-                <p class="text-center text-sm">Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan / atau perguruan tinggi.</p>
+                <p class="text-center text-base sm:text-sm">Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan / atau perguruan tinggi.</p>
             </div>
-            <div class="w-1/3 bg-purple-500 rounded-xl p-5 shadow-md">
+            <div class="w-full sm:w-1/3 bg-purple-500 rounded-xl p-3 sm:p-5 shadow-md">
                 <h1 class="text-center text-xl font-bold underline mb-2 text-purple-200">Pendamping PPH</h1>
-                <ol class="list-decimal ms-5 text-sm">
+                <ol class="list-decimal ms-5 text-base sm:text-sm">
                     <li class="ps-1">Dalam melakukan Pendampingan PPH, organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan / atau perguruan tinggi menunjuk pendamping PPH.</li>
                     <li class="ps-1">Pendamping PPH harus memenuhi persyaratan :</li>
                     <ol class="list-disc ms-5">
@@ -345,9 +346,9 @@
                     </ol>
                 </ol>
             </div>
-            <div class="w-1/3 bg-purple-500 rounded-xl p-5 shadow-md">
+            <div class="w-full sm:w-1/3 bg-purple-500 rounded-xl p-3 sm:p-5 shadow-md">
                 <h1 class="text-center text-xl font-bold underline mb-2 text-purple-200">Pelatihan Pendamping PPH</h1>
-                <ol class="list-decimal ms-5 text-sm">
+                <ol class="list-decimal ms-5 text-base sm:text-sm">
                     <li class="ps-1">Pelatihan pendamping PPH dilaksanakan oleh :</li>
                     <ol class="list-disc ms-5">
                         <li>BPJPH;</li>
@@ -360,18 +361,18 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-full p-10 text-purple-900 shadow-md">
-        <h1 class="text-center text-purple-800 font-bold text-5xl">DASAR HUKUM</h1>
-        <p class="text-center mb-5 text-sm italic">Amanat UU No. 33 Tahun 2014 Perpu No. 2 Tahun 2022</p>
-        <div class="w-full flex justify-center items-center mb-10">
-            <span class="w-44 h-44 p-6 rounded-full text-white flex justify-center items-center text-center bg-purple-500 shadow-md">UU No. 33 Tahun 2014 tentang Jaminan Produk Halal</span>
-            <span class="w-44 h-44 flex justify-center items-center text-center text-8xl font-black bi-plus-lg"></span>
-            <span class="w-44 h-44 p-6 rounded-full text-white flex justify-center items-center text-center bg-purple-400 shadow-md">Perpu No. 2 Tahun 2022 tentang Cipta Kerja</span>
-            <span class="w-44 h-44 text-center text-9xl font-bold">=</span>
-            <span class="w-44 h-44 p-5 text-purple-950 rounded-full flex justify-center items-center text-center bg-purple-300 shadow-md text-xs">Peraturan Pemerintah, Peraturan Menteri Agama, Keputusan Menteri Agama, Peraturan Badan, Keputusan kepala Badan</span>
+    <section class="w-full h-full p-4 sm:p-10 text-purple-900 shadow-md">
+        <h1 class="text-center text-purple-800 font-bold text-4xl sm:text-5xl">DASAR HUKUM</h1>
+        <p class="text-center mb-3 sm:mb-5 text-sm italic">Amanat UU No. 33 Tahun 2014 Perpu No. 2 Tahun 2022</p>
+        <div class="w-full flex justify-center items-center mb-5 sm:mb-10">
+            <span class="w-fit sm:w-44 h-fit sm:h-44 p-2 sm:p-6 rounded-xl sm:rounded-full text-white flex justify-center items-center text-center bg-purple-500 shadow-md text-xs sm:text-base">UU No. 33 Tahun 2014 tentang Jaminan Produk Halal</span>
+            <i class="w-0 sm:w-44 h-0 sm:h-44 p-2 sm:p-0 flex justify-center items-center text-center text-xl sm:text-8xl font-black bi-plus-lg"></i>
+            <span class="w-fit sm:w-44 h-fit sm:h-44 p-2 sm:p-6 rounded-xl sm:rounded-full text-white flex justify-center items-center text-center bg-purple-400 shadow-md text-xs sm:text-base">Perpu No. 2 Tahun 2022 tentang Cipta Kerja</span>
+            <span class="w-0 sm:w-44 h-0 sm:h-44 p-2 sm:p-0 text-center text-xl sm:text-9xl font-bold">=</span>
+            <span class="w-fit sm:w-44 h-fit sm:h-44 p-2 sm:p-5 text-purple-950 rounded-xl sm:rounded-full flex justify-center items-center text-center bg-purple-300 shadow-md text-xs">Peraturan Pemerintah, Peraturan Menteri Agama, Keputusan Menteri Agama, Peraturan Badan, Keputusan kepala Badan</span>
         </div>
-        <div class="flex justify-center items-start gap-10 mb-10">
-            <ol class="w-fit list-decimal mx-auto">
+        <div class="w-full mx-auto flex justify-center items-start gap-4 sm:gap-10 mb-5 sm:mb-10 text-xs sm:text-base">
+            <ol class="w-full list-decimal mx-auto">
                 <li>PP Nomor 39 Tahun 2021</li>
                 <li>Perpres 6 Tahun 2023</li>
                 <li>PMK Nomor 57 / PMK Nomor 05 Tahun 2019</li>
@@ -385,7 +386,7 @@
                 <li>KMA Nomor 748 Tahun 2021</li>
                 <li>KMA Nomor 1360 Tahun 2021</li>
             </ol>
-            <ol class="w-fit list-decimal mx-auto">
+            <ol class="w-full list-decimal mx-auto">
                 <li>Keputusan Kepala BPJPH Nomor 57 Tahun 2021</li>
                 <li>Peraturan BPJPH Nomor 1 Tahun 2021</li>
                 <li>Keputusan Kepala BPJPH Nomor 135 Tahun 2021</li>
@@ -398,63 +399,63 @@
                 <li>Keputusan Kepala BPJPH Nomor 88 Tahun 2022</li>
             </ol>
         </div>
-        <div class="w-full flex justify-center items-start gap-10">
-            <div class="w-5/12 mx-auto text-center">
+        <div class="w-full flex justify-center items-start gap-4 sm:gap-10">
+            <div class="w-full sm:w-5/12 mx-auto text-center">
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">PP NOMOR 39 TAHUN 2021</h1>
-                    <p class="text-sm">(Penyelenggaraan Bidang Jaminan Produk Halal)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">PP NOMOR 39 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Penyelenggaraan Bidang Jaminan Produk Halal)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">PMA NOMOR 20 TAHUN 2021</h1>
-                    <p class="text-sm">(Sertifikasi Halal bagi Pelaku UMK)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">PMA NOMOR 20 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Sertifikasi Halal bagi Pelaku UMK)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">KMA NOMOR 748 TAHUN 2021</h1>
-                    <p class="text-sm">(Jenis Produk yang Wajib Bersertifikat Halal)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">KMA NOMOR 748 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Jenis Produk yang Wajib Bersertifikat Halal)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">KMA NOMOR 1360 TAHUN 2021</h1>
-                    <p class="text-sm">(Bahan yang Dikecualikan dari Kewajiban Bersertifikat Halal)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">KMA NOMOR 1360 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Bahan yang Dikecualikan dari Kewajiban Bersertifikat Halal)</p>
                 </div>
             </div>
-            <div class="w-5/12 mx-auto text-center">
+            <div class="w-full sm:w-5/12 mx-auto text-center">
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">Peraturan BPJPH NOMOR 1 TAHUN 2021</h1>
-                    <p class="text-sm">(Tata Cara Pembayaran Tarif Layanan Badan Layanan Umum Badan Penyelenggara Jaminan Produk Halal)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">Peraturan BPJPH NOMOR 1 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Tata Cara Pembayaran Tarif Layanan Badan Layanan Umum Badan Penyelenggara Jaminan Produk Halal)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">Keputusan Kepala BPJPH NOMOR 57 TAHUN 2021</h1>
-                    <p class="text-sm">(Kriteria SJPH)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">Keputusan Kepala BPJPH NOMOR 57 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Kriteria SJPH)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">Keputusan Kepala BPJPH NOMOR 141 TAHUN 2021</h1>
-                    <p class="text-sm">(Penetapan Tarif Layanan Badan Layanan Umum Badan Penyelenggara Jaminan Produk Halal)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">Keputusan Kepala BPJPH NOMOR 141 TAHUN 2021</h1>
+                    <p class="text-xs sm:text-sm">(Penetapan Tarif Layanan Badan Layanan Umum Badan Penyelenggara Jaminan Produk Halal)</p>
                 </div>
                 <div class="my-3">
-                    <h1 class="font-bold text-purple-800">Keputusan Kepala BPJPH NOMOR 57 TAHUN 2022</h1>
-                    <p class="text-sm">(Manual SJPH untuk sertifikasi halal dengan pernyataan pelaku usaha)</p>
+                    <h1 class="font-bold text-purple-800 text-sm sm:text-base">Keputusan Kepala BPJPH NOMOR 57 TAHUN 2022</h1>
+                    <p class="text-xs sm:text-sm">(Manual SJPH untuk sertifikasi halal dengan pernyataan pelaku usaha)</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full h-full text-white p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
+    <section class="w-full h-full text-white p-4 sm:p-10 bg-gradient-to-l from-purple-900 to-purple-600 shadow-md">
         <h1 class="text-center text-purple-300 font-bold text-4xl mb-5">DASAR HUKUM</h1>
-        <div class="w-8/12 mx-auto flex flex-col justify-center items-center gap-5">
+        <div class="w-full sm:w-8/12 mx-auto flex flex-col justify-center items-center gap-5">
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">PERPU No. 2 Tahun 2023 tentang Cipta Kerja</h1>
-                <div class="p-5 text-purple-700">
-                    <h6 class="font-bold text-lg">Pasal 48 angka 20</h6>
-                    <ol class="list-decimal ms-5">
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">PERPU No. 2 Tahun 2023 tentang Cipta Kerja</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <h6 class="font-bold text-sm sm:text-lg">Pasal 48 angka 20</h6>
+                    <ol class="list-decimal ms-5 text-xs sm:text-base">
                         <li class="ps-1">Untuk Pelaku Usaha Mikro dan Kecil, kewajiban bersertifikat halal didasarkan atas pernyataan halal pelaku usaha Mikro dan Kecil.</li>
                         <li class="ps-1">Dalam hal permohonan Sertifikasi Halal diajukan oleh Pelaku Usaha Mikro dan Kecil, tidak dikenai biaya.</li>
                     </ol>
                 </div>
             </div>
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">PP No. 39 Tahun 2021</h1>
-                <div class="p-5 text-purple-700">
-                    <h6 class="font-bold text-lg">Pasal 79</h6>
-                    <ol class="list-decimal ms-5">
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">PP No. 39 Tahun 2021</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <h6 class="font-bold text-sm sm:text-lg">Pasal 79</h6>
+                    <ol class="list-decimal ms-5 text-xs sm:text-base">
                         <li class="ps-1">Kewajiban bersertifikat halal bagi Pelaku Usaha mikro dan kecil didasarkan atas pernyataan Pelaku Usaha.</li>
                         <li class="ps-1">Kriteria :</li>
                         <ol class="list-disc ms-5">
@@ -462,11 +463,11 @@
                             <li>proses produksi yang dipastikan kehalalannya dan sederhana.</li>
                         </ol>
                     </ol>
-                    <h6 class="font-bold text-lg mt-3">Pasal 81</h6>
-                    <p>Dalam hal permohonan Sertifikat Halal diajukan oleh Pelaku Usaha mikro dan kecil tidak dikenai biaya dengan mempertimbangkan kemampuan keuangan negara</p>
-                    <h6 class="font-bold text-lg mt-3">Pasal 86</h6>
-                    <p>Pembiayaan dapat dilakukan juga dengan :</p>
-                    <ol class="list-disc ms-5">
+                    <h6 class="font-bold text-sm sm:text-lg mt-3">Pasal 81</h6>
+                    <p class="text-xs sm:text-base">Dalam hal permohonan Sertifikat Halal diajukan oleh Pelaku Usaha mikro dan kecil tidak dikenai biaya dengan mempertimbangkan kemampuan keuangan negara</p>
+                    <h6 class="font-bold text-sm sm:text-lg mt-3">Pasal 86</h6>
+                    <p class="text-xs sm:text-base">Pembiayaan dapat dilakukan juga dengan :</p>
+                    <ol class="list-disc ms-5 text-xs sm:text-base">
                         <li class="ps-1">anggaran pendapatan dan belanja daerah;</li>
                         <li class="ps-1">pembiayaan alternatif untuk usaha mikro dan kecil;</li>
                         <li class="ps-1">pembiayaan dari dana kemitraan;</li>
@@ -477,27 +478,27 @@
                 </div>
             </div>
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">PMA No. 20 Tahun 2021</h1>
-                <div class="p-5 text-purple-700">
-                    <h6 class="font-bold text-lg">Pasal 1</h6>
-                    <p>Kegiatan sertifikasi halal oleh Pelaku Usaha mikro dan kecil dalam memenuhi persyaratan pernyataan kehalalan Produk dilakukan melalui pendampingan PPH.</p>
-                    <h6 class="font-bold text-lg mt-3">Pasal 5</h6>
-                    <p>Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan atau perguruan tinggi.</p>
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">PMA No. 20 Tahun 2021</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <h6 class="font-bold text-sm sm:text-lg">Pasal 1</h6>
+                    <p class="text-xs sm:text-base">Kegiatan sertifikasi halal oleh Pelaku Usaha mikro dan kecil dalam memenuhi persyaratan pernyataan kehalalan Produk dilakukan melalui pendampingan PPH.</p>
+                    <h6 class="font-bold text-sm sm:text-lg mt-3">Pasal 5</h6>
+                    <p class="text-xs sm:text-base">Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan atau perguruan tinggi.</p>
                 </div>
             </div>
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">PP No. 39 Tahun 2021</h1>
-                <div class="p-5 text-purple-700">
-                    <h6 class="font-bold text-lg">Pasal 80</h6>
-                    <p>Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan atau perguruan tinggi.</p>
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">PP No. 39 Tahun 2021</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <h6 class="font-bold text-sm sm:text-lg">Pasal 80</h6>
+                    <p class="text-xs sm:text-base">Pendampingan PPH dilakukan oleh organisasi kemasyarakatan Islam atau lembaga keagamaan Islam yang berbadan hukum dan atau perguruan tinggi.</p>
                 </div>
             </div>
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">Peraturan BPJPH No. 1 Tahun 2022</h1>
-                <div class="p-5 text-purple-700">
-                    <h6 class="font-bold text-lg">Penetapan Tarif fasilitasi Sertifikasi Halal dengan Pernyataan Pelaku Usaha</h6>
-                    <p>Tarif Sertifikasi Halal dengan Pernyataan Pelaku Usaha ditetapkan sebesar <span class="font-bold">Rp. 230.000</span> dengan komponen :</p>
-                    <ol class="list-disc ms-5">
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">Peraturan BPJPH No. 1 Tahun 2022</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <h6 class="font-bold text-sm sm:text-lg">Penetapan Tarif fasilitasi Sertifikasi Halal dengan Pernyataan Pelaku Usaha</h6>
+                    <p class="text-xs sm:text-base">Tarif Sertifikasi Halal dengan Pernyataan Pelaku Usaha ditetapkan sebesar <span class="font-bold">Rp. 230.000</span> dengan komponen :</p>
+                    <ol class="list-disc ms-5 text-xs sm:text-base">
                         <li class="ps-1">Rp. 25.000 untuk pendaftaran;</li>
                         <li class="ps-1">Rp. 25.000 untuk pendampingan PPH;</li>
                         <li class="ps-1">Rp. 150.000 untuk insentif Pendamping PPH; dan,</li>
@@ -506,14 +507,14 @@
                 </div>
             </div>
             <div class="w-full bg-purple-300 rounded-xl shadow-md overflow-hidden">
-                <h1 class="text-purple-800 font-black text-xl p-5 shadow text-center">KEPKA BPJPH No. 57 Tahun 2022</h1>
-                <div class="p-5 text-purple-700">
-                    <p class="text-center">MANUAL SISTEM JAMINAN PRODUK HALAL (SJPH) UNTUK SERTIFIKASI HALAL DENGAN PERNYATAAN PELAKU USAHA</p>
+                <h1 class="text-purple-800 font-black text-base sm:text-xl p-3 sm:p-5 shadow text-center">KEPKA BPJPH No. 57 Tahun 2022</h1>
+                <div class="p-3 sm:p-5 text-purple-700">
+                    <p class="text-center text-xs sm:text-base">MANUAL SISTEM JAMINAN PRODUK HALAL (SJPH) UNTUK SERTIFIKASI HALAL DENGAN PERNYATAAN PELAKU USAHA</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full h-full py-10 px-5  flex justify-center items-center gap-5 shadow-md footerBpjph"></section>
+    <section class="w-full h-full py-0 sm:py-10 px-0 sm:px-5  flex justify-center items-center gap-5 shadow-md footerBpjph"></section>
 
     <!-- SCRIPT START -->
     <script src="../bpjph.js"></script>
