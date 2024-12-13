@@ -137,7 +137,7 @@ const menu = [
 const elMenu = document.querySelector('#elMenu');
 let contentMenu = '';
 menu.forEach(mn => {
-    contentMenu += `<a href="${mn.link}" class="sm:px-6 px-3 sm:py-4 py-2 ${halaman == '/' + mn.link ? 'text-white bg-purple-800 font-bold shadow-md' : 'text-purple-800 hover:bg-purple-600 hover:text-white'} duration-300"><i class="bi-${halaman == '/' + mn.link ? mn.icon + '-fill' : mn.icon}"></i><span class="sm:inline-block hidden ms-2">${mn.judul}</span></a>`;
+    contentMenu += `<a href="${mn.link}" class="sm:px-6 px-3 sm:py-4 py-2 ${halaman == '/ym-gorontalo/' + mn.link ? 'text-white bg-purple-800 font-bold shadow-md' : 'text-purple-800 hover:bg-purple-600 hover:text-white'} duration-300"><i class="bi-${halaman == '/ym-gorontalo/' + mn.link ? mn.icon + '-fill' : mn.icon}"></i><span class="sm:inline-block hidden ms-2">${mn.judul}</span></a>`;
 });
 elMenu.innerHTML = contentMenu;
 
