@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.active {
+  background-color: var(--color-purple-900);
+  color: var(--color-white);
+  cursor: default;
+  pointer-events: none;
+}
+
+.hero {
+  background-image: url('/public/bg-purple.jpg');
+  background-size: cover;
+  background-position: center;
+}
