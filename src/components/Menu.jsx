@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { dataMenu } from "../constants/Data"
+import { dataMenu } from "../constants/data";
 
 
 const Menu = () => {
